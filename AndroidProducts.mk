@@ -14,4 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_tissot.mk
+    $(LOCAL_DIR)/spark_tissot.mk
+
+
+COMMON_LUNCH_CHOICES := \
+    spark_tissot-user \
+    spark_tissot-userdebug \
+    spark_tissot-eng
