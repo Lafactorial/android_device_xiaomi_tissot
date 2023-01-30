@@ -35,6 +35,9 @@ BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:u
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Aperture Camera
+TARGET_BUILD_APERTURE_CAMERA := true
+
 # Sushi Bootanimation
 SUSHI_BOOTANIMATION := 1080
 
