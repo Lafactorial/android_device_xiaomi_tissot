@@ -8,33 +8,28 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit some common ProjectBlaze stuff.
+$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := cherish_tissot
+PRODUCT_NAME := blaze_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
-# CherishOS  Stuffs
-CHERISH_BUILD_TYPE := UNOFFICIAL
-WITH_GMS := true
-TARGET_GAPPS_ARCH := arm64
+# ProjectBlaze Stuff
+BLAZE_BUILD_TYPE := UNOFFICIAL
+BLAZE_MAINTAINER := HaKaN
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GOOGLE_APEX := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
-# Maintainer
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.cherish.maintainer=Lafactorial \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 

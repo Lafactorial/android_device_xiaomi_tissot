@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_tissot.mk
+    $(LOCAL_DIR)/blaze_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    cherish_tissot-userdebug \
-    cherish_tissot-user \
-    cherish_tissot-eng
+    blaze_tissot-userdebug \
+    blaze_tissot-user \
+    blaze_tissot-eng
