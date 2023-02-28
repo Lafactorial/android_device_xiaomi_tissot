@@ -8,28 +8,26 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common ProjectBlaze stuff.
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
+# Inherit some common banana stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 
 # Inherit from tissot device
 $(call inherit-product, device/xiaomi/tissot/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := tissot
-PRODUCT_NAME := blaze_tissot
+PRODUCT_NAME := banana_tissot
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
-# ProjectBlaze Stuff
-BLAZE_BUILD_TYPE := UNOFFICIAL
-BLAZE_MAINTAINER := HaKaN
+# Banana Stuff
+BANANA_MAINTAINER := HaKaN
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
-WITH_GMS := true
 TARGET_GAPPS_ARCH := arm64
 
 
