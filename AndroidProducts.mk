@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_tissot.mk
+    $(LOCAL_DIR)/p404_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_tissot-userdebug \
-    banana_tissot-user \
-    banana_tissot-eng
+    p404_tissot-userdebug \
+    p404_tissot-user \
+    p404_tissot-eng
