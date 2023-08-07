@@ -31,6 +31,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
+# RisingTechOss Stuff
+RISING_CHIPSET := SD625
+RISING_MAINTAINER := HaKaN (Lafactorial)
+TARGET_BUILD_APERTURE_CAMERA := true
+RISING_BUILDTYPE := UNOFFICIAL
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
 # LineageOS Stuffs
 TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
