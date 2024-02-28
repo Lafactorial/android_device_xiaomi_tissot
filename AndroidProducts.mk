@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tissot.mk
+    $(LOCAL_DIR)/banana_tissot.mk
+	
+COMMON_LUNCH_CHOICES := \
+    banana_tissot-userdebug \
+    banana_tissot-user \
+    banana_tissot-eng
