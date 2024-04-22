@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rising_tissot.mk
+    $(LOCAL_DIR)/lineage_tissot.mk
 
 COMMON_LUNCH_CHOICES := \
-    rising_tissot-user \
-    rising_tissot-userdebug \
-    rising_tissot-eng
+    lineage_tissot-user \
+    lineage_tissot-userdebug \
+    lineage_tissot-eng
