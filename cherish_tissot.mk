@@ -23,18 +23,22 @@ PRODUCT_MODEL := Mi A1
 PRODUCT_MANUFACTURER := Xiaomi
 TARGET_VENDOR := Xiaomi
 
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="tissot-user 8.0.0 OPR1.170623.026 8.1.10 release-keys"
+
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
+
 # CherishOS  Stuffs
 CHERISH_BUILD_TYPE := UNOFFICIAL
 CHERISH_VANILLA := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
-WITH_GOOGLE_APEX := false
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Maintainer
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.cherish.maintainer=HaKaN \
-
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
